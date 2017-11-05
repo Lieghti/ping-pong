@@ -1,9 +1,9 @@
 // business logic
 var PingPong = function(number) {
 
- if ((number % 3 === 0)) { - this one works
+ //if ((number % 3 === 0)) { - this one works
 
-// if (number % 5 === 0) { -- this one works too
+if (number % 5 === 0) { -- this one works too
 
 // if ((number % 3 === 0) && (number % 5 === 0)) {
   //   return true;

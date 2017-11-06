@@ -1,17 +1,21 @@
 // business logic
 var PingPong = function(number) {
-
- //if ((number % 3 === 0)) { - this one works
-
-if (number % 5 === 0) { -- this one works too
-
-// if ((number % 3 === 0) && (number % 5 === 0)) {
-  //   return true;
-  // } else {
+  if ((number % 3 === 0)) {
     return true;
- } else {
+    } else {
     return false;
-  }
+     }
+
+// if (number % 5 === 0) {
+//
+// if ((number % 3 === 0) && (number % 5 === 0)) {
+//     return true;
+//   } else {
+//     return true;
+//  } else {
+//     return false;
+//   }
+
 };
 
 // user interface logic
@@ -22,14 +26,15 @@ $(document).ready(function() {
     var result = PingPong(number);
     $("#result").text(result);
 
-  //   $(".number").text(number);
-  //
-  //   if (!result) {                 // same as writing if (result === false)
-  //     $(".ping").text("not");
-  //   } else {
-  //     $(".pong").text("");
-  //   }
-  //
-  //   $("#result").show();
-   });
+   $(".number").text(number);
+
+   if (result) {                 // same as writing if (result === false)
+     $(".ping").text("ping");
+    } else {
+      $(".pong").text("pong");
+    }
+
+    $("#result").show();
+  });
+
 });

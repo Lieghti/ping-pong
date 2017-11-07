@@ -10,8 +10,13 @@ var PingPong = function(number) {
     } else if (number % 3 === 0) {
       return emptyArray.push ("ping")
     }
+    var displayNumber = document.createElement("li").lastChild;
 
 
+
+// https://jsfiddle.net/abdennour/b7Lwbrof/1/
+
+//https://www.w3schools.com/jsref/met_node_appendchild.asp
 
 
   // if (number % 3 === 0) {

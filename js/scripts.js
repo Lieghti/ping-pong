@@ -1,20 +1,18 @@
 // business logic
-var PingPong = function(number) {
-  if ((number % 3 === 0)) {
-    return true;
-    } else {
-    return false;
-     }
 
-// if (number % 5 === 0) {
-//
-// if ((number % 3 === 0) && (number % 5 === 0)) {
-//     return true;
-//   } else {
-//     return true;
-//  } else {
-//     return false;
-//   }
+var PingPong = function(number) {
+  var newArray = [];
+  for (i = 1; i >= number; i++) {
+  } if (number % 3 === 0) {
+    return newArray.push("ping");
+    else if (number % 5 === 0) {
+    return newArray.push("pong");
+  } else if (number % 3 === 0) && (number % 5 === 0) {
+   return newArray.push("PingPong");
+    else {
+      return number;
+    }
+
 
 };
 
@@ -24,16 +22,6 @@ $(document).ready(function() {
     event.preventDefault();
     var number = parseInt($("input#number").val());
     var result = PingPong(number);
-    $("#result").text(result);
-
-   $(".number").text(number);
-
-   if (result) {                 // same as writing if (result === false)
-     $(".ping").text("ping");
-    } else {
-      $(".pong").text("pong");
-    }
-
     $("#result").show();
   });
 

@@ -6,7 +6,7 @@ var PingPong = function(number) {
     if (i % 3 === 0) {
       numberList.push("Ping");
     } else if (i % 5 === 0){
-      
+      numberList.push("pong");
     }
 
 

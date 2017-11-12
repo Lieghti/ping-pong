@@ -7,6 +7,10 @@ var PingPong = function(number) {
       numberList.push("Ping");
     } else if (i % 5 === 0){
       numberList.push("pong");
+    } else if (i % 15 === 0) {
+      numberList.push("pingpong");
+    } else {
+      numberList.push(" " + i); 
     }
 
 

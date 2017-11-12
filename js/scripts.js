@@ -3,7 +3,11 @@
 var PingPong = function(number) {
   var numberList =[];
   for (i = 1; i <= number; i++ ) {
-  
+    if (i % 3 === 0) {
+      numberList.push("Ping");
+    } else if (i % 5 === 0){
+      
+    }
 
 
 };

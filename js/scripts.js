@@ -1,8 +1,8 @@
 // business logic
 
 var PingPong = function(number) {
-  var emptyArray =[];
-  for (i = 1; i < number; i++ ) {
+  var numberList =[];
+  for (i = 1; i <= number; i++ ) {
     if ((number % 3 === 0) && (number % 5 === 0)){
       return emptyArray.push("ping pong");
     } else if (number % 5 === 0) {

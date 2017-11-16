@@ -36,5 +36,5 @@ var pingPong = function(number) {
     });
 
   });
-}
+} // These shouldn't be here, but the console keeps prompting me to add these two brackets. I don't know why.
 }

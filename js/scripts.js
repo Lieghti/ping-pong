@@ -1,9 +1,6 @@
 var PingPong = function (number) {
   var numberList =[];
-    return numberList;
-};
-
-  for (i = 1; i <= number; i++ ) {
+  for (var i = 1; i <= number; i++ ) {
     if (i % 15 === 0) {
       numberList.push("pingpong");
     } else if (i % 5 === 0){
@@ -13,7 +10,10 @@ var PingPong = function (number) {
     } else {
       numberList.push ("" + i);
     }
-}
+    {
+    console.log(numberList.join(" "));
+    return (numberList);
+    }
 
 
 
@@ -21,14 +21,18 @@ var PingPong = function (number) {
   $(document).ready(function() {
     $("form#ping-pong").submit(function(event) {
       event.preventDefault();
+      $("#result").empty();
 
-      var number = parseInt($("input#number").val());
+      var number = parseInt($("#number").val());
 
       var result = PingPong(number);
-      var lineItem = result.forEach(function(PingPongInput){
+
+    result.forEach(function(PingPongInput){
         $("ul#result").append("<li>" + pingPongInput + "</li>");
-      });
+      })
       $("ul#result").show();
     });
 
   });
+}
+}
